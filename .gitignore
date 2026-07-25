@@ -1,10 +1,26 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# Environment variables (contains sensitive API keys)
+.env
 
 # Virtual environments
-.venv
+.venv/
+venv/
+env/
+day3/venv/
+week1/day3/venv/
+
+# Python-generated files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
