@@ -36,7 +36,9 @@ for prompt in prompts:
         max_tokens = 100
     )
 
-    # print(response.choices[0].message.content)
+    print("response answer:- ")
+    print(response.choices[0].message.content)
     usage = response.usage
 
+    
     print(f"Prompt: {prompt} ;- User Tokens : {usage.prompt_tokens} and LLM tokens : {usage.completion_tokens} , total tokens :- {usage.total_tokens} Finish Reason = {response.choices[0].finish_reason}")
